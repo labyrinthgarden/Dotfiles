@@ -1,0 +1,92 @@
+{
+    "logo":{
+    	"source":"~/Pictures/Fastfetch/sr.png",
+    	"type":"kitty",
+    	"height":11,
+    	"padding":{
+    		"top":4
+    	}
+    },
+    "display":{
+        "separator":" "
+    },
+    "modules":[
+	{
+            "type":"custom",
+            "format":"\u001b[90m✪    \u001b[31m✪    \u001b[32m✪    \u001b[33m✪    \u001b[34m✪    \u001b[35m✪    \u001b[36m✪    \u001b[37m✪ "
+        },
+	"break",
+	{
+            "type":"title",
+            "keyWidth":10
+        },
+        "break",
+        {
+            "type":"os",
+            "key":" ",
+            "keyColor":"36"
+        },
+        {
+            "type": "cpu",
+            "key": " ",
+            "keyColor": "35",
+        },
+        {
+            "type": "gpu",
+            "key": "󰢮 ",
+            "keyColor": "36",
+        },
+        {
+            "type":"kernel",
+            "key":" ",
+            "keyColor":"35",
+        },
+        {
+            "type": "packages",
+            "format": "{} (dnf)",
+            "key": " ",
+            "keyColor":"36",  
+        },
+        {
+            "type":"shell",
+            "key":" ",
+            "keyColor":"35", 
+        },
+        {
+            "type":"terminal",
+            "key":" ",
+            "keyColor":"36", 
+        },
+        {
+            "type":"wm",
+            "key":" ",
+            "keyColor":"35", 
+        },
+        {
+            "type":"terminalfont",
+            "key":" ",
+            "keyColor":"36", 
+        },
+        {
+            "type":"uptime",
+            "key":" ",
+            "keyColor":"35", 
+        },
+        {
+            "type":"media",
+            "key":"󰝚 ",
+            "keyColor":"36", 
+        },
+        {
+            "type":"player",
+            "key":" ",
+            "keyColor":"35", 
+        },
+        "break",
+        {
+            "type":"custom",
+            "format":"\u001b[90m✪    \u001b[31m✪    \u001b[32m✪    \u001b[33m✪    \u001b[34m✪    \u001b[35m✪    \u001b[36m✪    \u001b[37m✪ "
+        },
+        "break",
+	"break"]
+}

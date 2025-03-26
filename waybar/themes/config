@@ -1,0 +1,26 @@
+{
+    "layer":"top",
+    "margin-top":0,
+    "margin-bottom":0,
+    "margin-left":12,
+    "margin-right":12,    
+    "spacing":0,
+    "reload":true,
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+    "modules-left": [
+        "custom/appmenu",
+        "hyprland/workspaces",
+    ],
+    // Modules Right    
+    "modules-right": [
+    	"keybindings",
+        "pulseaudio",
+        "network",
+        "battery", 
+        "power-profiles-daemon",
+        "group/hardware",
+        "clock"
+    ]
+}
