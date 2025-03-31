@@ -73,6 +73,6 @@ alias edi='gnome-text-editor'
 if [ "$TERM" = "xterm-kitty" ]; then
     fastfetch
 else
-    neofetch --ascii Clover
+    fastfetch --ascii Clover
 fi
 export PYWAL_NO_KITTY=1
