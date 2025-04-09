@@ -1,25 +1,34 @@
-// Zed settings
-//
-// For information on how to configure Zed, see the Zed
-// documentation: https://zed.dev/docs/configuring-zed
-//
-// To see all of Zed's default settings without changing your
-// custom settings, run `zed: open default settings` from the
-// command palette (cmd-shift-p / ctrl-shift-p)
 {
   "format_on_save": "off",
   "base_keymap": "VSCode",
   "telemetry": {
-      "metrics": false
+    "metrics": false
   },
-  "editor.insertSpaces": false, // Usa tabulaciones en lugar de espacios
+  "editor.insertSpaces": false,
   "editor.tabSize": 0,
   "vim_mode": false,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 18,
+  "buffer_font_size": 18,
+  "ui_font_family": "URW Gothic",
+  "buffer_font_family": "IosevkaTerm Nerd Font Mono",
   "theme": {
-      "mode": "dark",
-      "light": "One Light",
-      "dark": "Zedrack Dark Theme"
-    }
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Sombre Éclat"
+  },
+  "experimental.theme_overrides": {
+    "background.appearance": "transparent",
+    "background": "#00000880",
+    "editor.background": "#32025920",
+    "editor.gutter.background": "#00000030",
+    "tab_bar.background": "#00000030",
+    "toolbar.background": "#00000880",
+    "tab.active_background": "#28282820",
+    "tab.inactive_background": "#00000000",
+    "status_bar.background": "#00000030",
+    "title_bar.background": "#00000030",
+    "panel.background": "#00000000",
+    "border.variant": "#00000000",
+    "editor.active_line.background": "#00882205"
+  }
 }
