@@ -19,7 +19,7 @@
   "experimental.theme_overrides": {
     "background.appearance": "transparent",
     "background": "#000000e6",
-    "editor.background": "#32025920",
+    "editor.background": "#32025910",
     "editor.gutter.background": "#00000030",
     "tab_bar.background": "#00000030",
     "toolbar.background": "#00000880",
