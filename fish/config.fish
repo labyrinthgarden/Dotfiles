@@ -10,6 +10,9 @@ alias s="clear && su"
 alias shut='shutdown now'
 alias rmh='rm /home/Aphroth/fish/fish_history'
 alias edi='kwrite'
+wal -R -n
+clear
+fastfetch
 # overwrite greeting
 # potentially disabling fastfetch
 #function fish_greeting
