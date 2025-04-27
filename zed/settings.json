@@ -1,4 +1,5 @@
 {
+  "icon_theme": "Catppuccin Latte",
   "assistant": {
     "default_model": {
       "provider": "zed.dev",
