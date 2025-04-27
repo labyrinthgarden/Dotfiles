@@ -15,7 +15,7 @@
   "editor.insertSpaces": false,
   "editor.tabSize": 0,
   "vim_mode": false,
-  "ui_font_size": 18,
+  "ui_font_size": 15,
   "buffer_font_size": 16,
   "ui_font_family": "URW Gothic",
   "buffer_font_family": "IosevkaTerm Nerd Font Mono",
