@@ -22,7 +22,7 @@
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Sombre Éclat"
+    "dark": "Catppuccin Mocha"
   },
   "experimental.theme_overrides": {
     "warning.background": "#8000cf99",
