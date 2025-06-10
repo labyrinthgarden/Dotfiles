@@ -8,9 +8,21 @@ vim.opt.softtabstop = 2       -- Espacios al presionar <Tab> o <BS>
 vim.opt.shiftwidth = 2        -- Tamaño de indentación automática
 
 -- Números de línea
-vim.opt.number = true         -- Muestra números de línea absolutos
-vim.opt.relativenumber = true -- Números relativos (útil para moverse con comandos como 5j)
+vim.api.nvim_create_autocmd({'InsertEnter', 'BufLeave', 'FocusLost'}, {
+  pattern = '*',
+  callback = function()
+    vim.opt.relativenumber = false
+    vim.opt.number = true
+  end
+})
 
+vim.api.nvim_create_autocmd({'InsertLeave', 'BufEnter', 'FocusGained'}, {
+  pattern = '*',
+  callback = function()
+    vim.opt.relativenumber = true
+    vim.opt.number = true
+  end
+})
 -- Transparencia del fondo (para terminales compatibles)
 vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
