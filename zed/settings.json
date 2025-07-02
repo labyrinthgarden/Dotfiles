@@ -1,6 +1,6 @@
 {
   "icon_theme": "Catppuccin Latte",
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "zed.dev",
       "model": "claude-3-5-sonnet-latest"
@@ -18,18 +18,18 @@
   "ui_font_size": 15,
   "buffer_font_size": 16,
   "ui_font_family": "URW Gothic",
-  "buffer_font_family": "IosevkaTerm Nerd Font Mono",
+  "buffer_font_family": "Iosevka",
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Catppuccin Mocha"
+    "dark": "Sombre Éclat"
   },
   "experimental.theme_overrides": {
     "warning.background": "#8000cf99",
     "warning": "#8000cf40",
     "element.selected": "#8000cf40",
     "background.appearance": "transparent",
-    "background": "#000000e6",
+    "background": "#0000000a",
     "editor.background": "#32025910",
     "terminal.background":"#91599810",
     "editor.gutter.background": "#00000030",
