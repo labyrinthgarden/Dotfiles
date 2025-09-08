@@ -2,10 +2,9 @@
   "icon_theme": "Catppuccin Latte",
   "agent": {
     "default_model": {
-      "provider": "zed.dev",
-      "model": "claude-3-5-sonnet-latest"
+      "provider": "copilot_chat",
+      "model": "gpt-4.1"
     },
-    "version": "2"
   },
   "format_on_save": "off",
   "base_keymap": "VSCode",
