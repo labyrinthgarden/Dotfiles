@@ -183,7 +183,7 @@ layout {
         // You can use any CSS linear-gradient tool on the web to set these up.
         // Changing the color space is also supported, check the wiki for more info.
         //
-	active-gradient from="#00000090" to="#FF00FF60" angle=45
+	active-gradient from="#00000090" to="#FFFFFF60" angle=45
 
         // You can also color the gradient relative to the entire view
         // of the workspace, rather than relative to just the window itself.
@@ -270,7 +270,7 @@ layout {
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "./.config/waybar/launch.sh"
-spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/aphr/Pictures/Wallpapers/purple.png"
+spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/gyro/Pictures/W/5.png"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -366,10 +366,10 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+X hotkey-overlay-title="Open Zed" {spawn "zed";}
-    Mod+B hotkey-overlay-title="Open Browser: firefox" { spawn "firefox"; }
+    Mod+B hotkey-overlay-title="Open Browser: Firefox Nightly" { spawn "firefox-nightly"; }
     Mod+E hotkey-overlay-title="Open Files: pcmanfm" { spawn "pcmanfm"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Super+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "./.config/swaylock/lock.sh"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
