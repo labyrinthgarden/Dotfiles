@@ -220,7 +220,7 @@ local mainMod = "SUPER"
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Z", hl.dsp.window.close())
-hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + SHIFT + K", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock -c ~/.config/hypr/hyprlock.conf"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
@@ -235,6 +235,8 @@ hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
     mode = "maximized",
 }))
+hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("~/.config/waybar/launch_v.sh"))
+hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left",  hl.dsp.focus({ direction = "left" }))

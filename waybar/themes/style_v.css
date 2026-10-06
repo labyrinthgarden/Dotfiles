@@ -1,12 +1,12 @@
 * {
     font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 window#waybar {
     border-bottom: 0px solid #ffffff;
     color: rgba(0,0,0,0.8);
-    background: rgba(0,0,0,0.8);
+    background: rgba(25,31,52,0.9);
     transition-property: background-colori;
     padding: 50px;
     transition-duration: .1s;
@@ -14,7 +14,7 @@ window#waybar {
 /* -----------------------------------------------------
  * Modules
  * ----------------------------------------------------- */
-.modules-right {
+.modules-center {
     margin: 5px;
 }
 #custom-hypridle.active {
@@ -43,6 +43,11 @@ window#waybar {
 /* -----------------------------------------------------
  * Custom Modules
  * ----------------------------------------------------- */
+#custom-dotdec {
+  padding:1px 10px 0px 10px;
+  margin: 3px 20px 3px 10px;
+  color:rgba(0,255,0,0.4);
+}
 #clock {
     background-color: @backgrounddark;
     font-size: 10px;

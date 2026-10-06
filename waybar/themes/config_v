@@ -9,12 +9,11 @@
     "include": [
         "~/.config/waybar/modules.json"
     ],
-    // Modules Right    
-    "modules-right": [
-    	"keybindings",
-        "pulseaudio",
-        "network",
-        "battery",
-        "clock"
+    "modules-center": [
+      "custom/dotdec",
+      "pulseaudio",
+      "network",
+      "battery",
+      "clock"
     ]
 }
