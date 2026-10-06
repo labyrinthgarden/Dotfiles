@@ -6,6 +6,11 @@ hl.monitor({
     scale    = "auto",
 })
 
+hl.monitor({
+  output = "eDP-1",
+  disabled = true
+})
+
 local terminal      = "kitty"
 local editor        = "zed"
 local browser       = "firefox-developer-edition"
@@ -49,18 +54,17 @@ hl.env("HYPRCURSOR_SIZE", "24")
 -- Refer to https://wiki.hypr.land/Configuring/Basics/Variables/
 hl.config({
   general = {
+    layout = "dwindle",
     gaps_in  = 5,
-    gaps_out = 20,
-    no_focus_fallback = false,
-    border_size = 2,
+    gaps_out = 7,
+    border_size = 1,
     col = {
-      active_border   = { colors = {"rgba(224,192,88,1)", "rgba(0,0,0,0)"}, angle = 140 },
+      active_border   = { colors = {"rgba(255,255,255,0)", "rgba(255,255,255,1)"}, angle = 340 },
       inactive_border = "rgba(0,0,0,0)",
     },
     resize_on_border = false,
     -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
     allow_tearing = false,
-    layout = "dwindle",
   },
   decoration = {
     rounding       = 20,
@@ -158,10 +162,9 @@ hl.config({
 ----------------
 
 hl.config({
-    misc = {
-        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
-    },
+  misc = {
+    disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
+  },
 })
 
 
@@ -179,7 +182,7 @@ hl.config({
 
         follow_mouse = 1,
 
-        sensitivity = 1,
+        sensitivity = 0.4,
 
         touchpad = {
           natural_scroll = true,
@@ -218,6 +221,7 @@ local mainMod = "SUPER"
 hl.bind(mainMod .. " + Return", hl.dsp.exec_cmd(terminal))
 local closeWindowBind = hl.bind(mainMod .. " + Z", hl.dsp.window.close())
 hl.bind(mainMod .. " + K", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock -c ~/.config/hypr/hyprlock.conf"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
@@ -225,8 +229,11 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + S", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
+hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({
     mode = "fullscreen",
+}))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
+    mode = "maximized",
 }))
 
 -- Move focus with mainMod + arrow keys

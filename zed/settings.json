@@ -1,13 +1,19 @@
 {
-  "icon_theme": "Catppuccin Latte",
+  "icon_theme": {
+    "mode": "light",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Latte"
+  },
   "agent": {
     "default_model": {
+      "effort": "high",
+      "enable_thinking": true,
       "provider": "copilot_chat",
-      "model": "gpt-4.1"
+      "model": "gpt-5.3-codex"
     },
   },
   "format_on_save": "off",
-  "base_keymap": "VSCode",
+  "base_keymap": "Zed",
   "telemetry": {
     "metrics": false
   },
@@ -15,13 +21,13 @@
   "editor.tabSize": 0,
   "vim_mode": false,
   "ui_font_size": 15,
-  "buffer_font_size": 16,
+  "buffer_font_size": 13,
   "ui_font_family": "URW Gothic",
   "buffer_font_family": "Iosevka",
   "theme": {
     "mode": "dark",
     "light": "One Light",
-    "dark": "Sombre Éclat"
+    "dark": "Ghostty Dark Inspired Theme"
   },
   "experimental.theme_overrides": {
     "warning.background": "#8000cf99",

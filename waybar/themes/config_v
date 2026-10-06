@@ -1,0 +1,20 @@
+{
+    "layer":"top",
+    "margin-top":10,
+    "margin-bottom":0,
+    "margin-left":750,
+    "margin-right":750,    
+    "spacing":0,
+    "reload":true,
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+    // Modules Right    
+    "modules-right": [
+    	"keybindings",
+        "pulseaudio",
+        "network",
+        "battery",
+        "clock"
+    ]
+}

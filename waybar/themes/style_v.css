@@ -1,59 +1,21 @@
 * {
     font-family: "Fira Sans Semibold", "Font Awesome 6 Free", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
     border: none;
-    border-radius: 0px;
+    border-radius: 10px;
 }
 window#waybar {
     border-bottom: 0px solid #ffffff;
-    color: transparent;
-    background: transparent;
-    transition-property: background-color;
-    transition-duration: .2s;
-}
-#workspaces {
-    background: @workspacesbackground1;
-    margin: 2px 1px 3px 1px;
-    padding: 0px 1px;
-    border-radius: 15px;
-    border: 0px;
-    font-weight: bold;
-    font-style: normal;
-    opacity: 0.8;
-    font-size: 16px;
-    color: @textcolor1;
-}
-#workspaces button {
-    padding: 0px 5px;
-    margin: 4px 3px;
-    border-radius: 15px;
-    border: 0px;
-    color: @textcolor1;
-    background-color: @workspacesbackground2;
-    transition: all 0.3s ease-in-out;
-    opacity: 0.4;
-}
-#workspaces button.active {
-    color: @textcolor1;
-    background-color:#808080;
-    border-radius: 15px;
-    min-width: 40px;
-    transition: all 0.3s ease-in-out;
-    opacity:1.0;
-}
-#workspaces button:hover {
-    color: #808080;
-    background-color:white;
-    border-radius: 15px;
-    opacity:1;
+    color: rgba(0,0,0,0.8);
+    background: rgba(0,0,0,0.8);
+    transition-property: background-colori;
+    padding: 50px;
+    transition-duration: .1s;
 }
 /* -----------------------------------------------------
  * Modules
  * ----------------------------------------------------- */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+.modules-right {
+    margin: 5px;
 }
 #custom-hypridle.active {
     color: @iconcolor;
@@ -81,44 +43,6 @@ window#waybar {
 /* -----------------------------------------------------
  * Custom Modules
  * ----------------------------------------------------- */
-#custom-appmenu {
-    background-color: @backgrounddark;
-    font-size: 20px;
-    color: @textcolor1;
-    border-radius: 15px;
-    padding: 0px 10px 0px 10px;
-    margin: 3px 17px 3px 0px;
-    opacity:0.8;
-    border:3px solid @bordercolor;
-}
-/* -----------------------------------------------------
- * Hardware Group
- * ----------------------------------------------------- */
-#custom-system{
-    color:#FFFFFF;
-    margin-right:24px;
-}
-#disk,#memory,#cpu,#language {
-    margin:0px;
-    padding:0px;
-    font-size:10px;
-    color:@iconcolor;
-}
-#language {
-    margin-right:10px;
-}
-/* -----------------------------------------------------
- * Power Profiles Daemon
- * ----------------------------------------------------- */
- #power-profiles-daemon {
-    margin: 0px 13px 0px 0px;
-    padding:0px;
-    font-size:16px;
-    color:@iconcolor;
-}
-/* -----------------------------------------------------
- * Clock
- * ----------------------------------------------------- */
 #clock {
     background-color: @backgrounddark;
     font-size: 10px;
@@ -127,7 +51,7 @@ window#waybar {
     padding: 1px 10px 0px 10px;
     margin: 3px 0px 3px 0px;
     opacity:0.8;
-    border:3px solid @bordercolor;
+    border:0px solid @bordercolor;
 }
 /* -----------------------------------------------------
  * Pulseaudio

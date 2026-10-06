@@ -17,6 +17,7 @@ alias na="nano -0 -l"
 alias l="ls -la"
 alias dn="sudo dnf5"
 alias up="dn upgrade -y && dn autoremove && dn clean all"
+alias siu="sudo pacman -Syu"
 alias s="clear && su"
 alias shut='shutdown now'
 alias rmh='rm ~/fish/fish_history'
