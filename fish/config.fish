@@ -1,5 +1,6 @@
 set -U fish_greeting
 export PATH="$HOME/.local/bin:$PATH"
+source ~/.cache/wallust/sequences
 
 set -gx PATH "$HOME/.local/bin" $PATH
 

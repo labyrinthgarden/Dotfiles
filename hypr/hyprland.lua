@@ -229,12 +229,8 @@ hl.bind(mainMod .. " + D", hl.dsp.exec_cmd(menu))
 hl.bind(mainMod .. " + C", hl.dsp.exec_cmd(editor))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + S", hl.dsp.layout("togglesplit"))    -- dwindle only
-hl.bind(mainMod .. " + M", hl.dsp.window.fullscreen({
-    mode = "fullscreen",
-}))
-hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({
-    mode = "maximized",
-}))
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "maximized" }))
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 hl.bind(mainMod .. " + I", hl.dsp.exec_cmd("~/.config/waybar/launch_v.sh"))
 hl.bind(mainMod .. " + U", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"))
 
